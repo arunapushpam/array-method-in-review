@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,90 +9,104 @@
 </head>
 <body>
    <script>
-      // 1.concat
+      // concat
 	   var fruit=[ "apple", "mango","orange"];
 	   var fru=["gova", "papaya"];
 	   var fruits=fruit.concat(fru);
 	   console.log(fruits);
 	  
 	  
-	  //2.length
+	  //length
 		var array=[15,20,30,35,53];
 		  b= array.length;
 		 console.log(b);
 	  
-	  // 3.map
+	  // map
 	  var color=["green", "yellow", "red", "pink","whiet"];
 	   var col=color.map(function(colors){
 	     return colors.toUpperCase();
 	  });
 	     console.log(col);
 	  
-	  // 4.push
+	  // push
 	 var color=["green", "yellow", "red", "pink","whiet"]
 	  color.push("gray")
 	 console.log(color);
 	  
-	  // 5.unshift
+	  // unshift
 	 var color=["green", "yellow", "red", "pink","whiet"]
 	  color.unshift("black");
 	  console.log(color);
 	  
-	  // 6.splice first value index 2nd value ethana index
+	  // splice
 	  var color=["green", "yellow", "red", "pink","whiet"]
-	  color.splice(2,2);
+	  color.splice(2,2,"blue");
 	  console.log(color);
 	  
-	  // 7.pop last element remove
+	  
+	  // pop last element remove
 	 var color=["green", "yellow", "red", "pink","whiet"]
 	  var colors=color.length;
 	  console.log(colors);
 	  color.pop();
 	  console.log(color);
 	  
-	  // 8.shift //first element remove
+	  // 8. //first element remove
 	  var color=["green", "yellow", "red", "pink","whiet"]
 	   color.shift();
 	  console.log(color);
 					
-	  // 9.revers
+	  // revers
 	  var color=["green", "yellow", "red", "pink","whiet"];
 	  var colors=color.reverse();
 	  console.log(color);
-	  console.log(colors);
+	  <!-- console.log(colors);	 -->
 	  
-	  // 10.indexOf //return index value
+	  // indexOf //return index value
 	  var fruit=["banana","apple","orange","pineapple","gova"];
       var fruits=fruit.indexOf("orange");
 	  console.log(fruits);
 	  
 	  
-	  // 11.lastindexOf last start panni first index vlaue
+	  // lastindexOf last start panni first index vlaue
 	  var fruit=["banana","apple","gova","orange","pineapple","gova"];
       var fruits=fruit.lastIndexOf("gova");
 	  console.log(fruits);
 	  
-	  // 12.sort
+	  // sort
 	  var number=[111,21,11,44,121,1];
 	  numbers=number.sort();
 	  console.log(numbers);
 	  
-	   <!-- 13.to string -->
+	   <!-- to string -->
 		 
 		  var name=["aruna","anitha","venika"]
 		  b=name.toString();
 		  console.log(b);
 		
-		<!-- 14.slice -->
-		  x=[5,6,7,8,9,1,4,3]//array value 2 aa athu matum delete akum (start index last index-1)
-		 y=x.slice(3);
-		 console.log(y);
-		 console.log(x);
-		 
+		<!-- slice -value -->
+		 var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+		var fruit = fruits.slice(-3, -1);
+		console.log(fruit)
 		  <!-- join -->
 		    var a=[10,20,50,30,40,50,40,70,50]
-		  b=a.join();
+		  b=a.join('*');
 		  console.log(b);
+		  
+		  //8. foreatch
+	  
+	  var input=[1,2,3,4,5,6,7,];
+	  input.forEach(function (number,index,array){
+		console.log(number,index,array);
+	  })
+	  
+	  //reduce
+	  var number = [1,2,3,4,5,6,7]
+	  var c= number.reduce(function(previous,current){
+	  var add=(previous+current);
+	  return add;
+	  })
+	  console.log(c);
    
    </script>
 </body>
