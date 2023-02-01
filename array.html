@@ -68,6 +68,16 @@
 	  console.log(fruits);
 	  
 	  
+	   //reduce
+	  var number = [1,2,3,4,5,6,7]
+	  var c= number.reduce(function(previous,current){
+	  var add=(previous+current);
+	  return add;
+	  })
+	  console.log(c);
+	  
+	  
+	  
 	  // lastindexOf last start panni first index vlaue
 	  var fruit=["banana","apple","gova","orange","pineapple","gova"];
       var fruits=fruit.lastIndexOf("gova");
@@ -93,20 +103,14 @@
 		  b=a.join('*');
 		  console.log(b);
 		  
-		  //8. foreatch
+		  //foreatch
 	  
 	  var input=[1,2,3,4,5,6,7,];
 	  input.forEach(function (number,index,array){
 		console.log(number,index,array);
 	  })
 	  
-	  //reduce
-	  var number = [1,2,3,4,5,6,7]
-	  var c= number.reduce(function(previous,current){
-	  var add=(previous+current);
-	  return add;
-	  })
-	  console.log(c);
+	 
 	  
 	  //find method
 	  var age=[10,11,22,12,31,23,7]
@@ -115,7 +119,51 @@
 	  return (ages>10);
 	  })
 	  console.log(age1)
+	  
+	  
+	  //includes
+	  var color = ['green','yellow','red','blue','pink'];
+	console.log(color.includes('yellow'));
    
+   
+	
+	//filter
+	const filtered = [12, 5, 8, 130, 44].filter(fil);
+	function fil(a) {
+	return a >= 20;
+	}
+	console.log(filtered)
+	
+	
+	//sum
+	
+	function name(element, index, array) {
+	return element > 10;
+	}
+
+	[2, 5, 8, 1, 4].some(name); // false
+	[12, 5, 8, 1, 4].some(name); // true
+
+	
+	//Sort an array without using inbuild methods: input: [12, 10, 15, -11, -14, 13, 16] output: [-14, -11, 10, 12, 13, 15, 16]
+		var a= [12, 10, 15, -11, -14, 13, 16]
+		var temp;
+  for(i=0; i<a.length; i++) {
+
+    for (j=i+1; j<a.length; j++) {
+
+      if(a[i] > a[j]) {
+
+        temp = a[i]
+        a[i] = a[j]
+        a[j] = temp
+      }
+    }
+  }
+  
+
+console.log(a)
+	
    </script>
 </body>
 </html>                                                                                                                                                        
