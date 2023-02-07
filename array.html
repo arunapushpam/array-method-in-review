@@ -141,8 +141,8 @@
 	return element > 10;
 	}
 
-	[2, 5, 8, 1, 4].some(name); // false
-	[12, 5, 8, 1, 4].some(name); // true
+	//[2, 5, 8, 1, 4].some(name); // false
+	//[12, 5, 8, 1, 4].some(name); // true
 
 	
 	//Sort an array without using inbuild methods: input: [12, 10, 15, -11, -14, 13, 16] output: [-14, -11, 10, 12, 13, 15, 16]
@@ -163,7 +163,43 @@
   
 
 console.log(a)
+
+
+let employees = [
+   {
+       "id": 11,
+       "name":"Abhinav",
+       "salary":75000
+   },
+   {
+       "id": 2131,
+       "name":"Gaurav",
+       "salary":62000
+   },
+   {
+       "id": 3012,
+       "name":"Raj",
+       "salary":32000
+   }]
+   
+   console.log(employees)
+   var x=employees.map(function(name){
+	return(name.salary)
 	
+   })
+   console.log(x);
+   var y= x.reduce((pre,cur)=>pre+cur)
+   console.log(y)
+
+//arrya hightest value printing
+   var a=[1,2,3,4,55,3] 
+   var b=a[0]
+   for (i=0; i<a.length;i++){
+		if(b<a[i]){
+			b=a[i]
+		}
+   }
+   console.log(b)
    </script>
 </body>
 </html>                                                                                                                                                        
